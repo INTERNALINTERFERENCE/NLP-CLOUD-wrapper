@@ -6,20 +6,20 @@ using System.Threading.Tasks;
 using TranslationCore.Extensions;
 
 namespace TranslationCore;
-public class NlpTranslationClient
+public class NlpTranslationService
 {
     private readonly string _apiKey;
     private readonly Uri _uri = new("https://api.nlpcloud.io/v1/nllb-200-3-3b/translation");
 
-    public NlpTranslationClient(string apiKey)
+    public NlpTranslationService(string apiKey)
     {
         _apiKey = apiKey;
     }
     
     public async Task<TranslationRes?> Translate(
         string text,
-        string source,
-        string target)
+        string? source,
+        string? target)
     {
         using var client = new HttpClient();
         

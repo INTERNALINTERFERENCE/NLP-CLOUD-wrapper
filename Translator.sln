@@ -2,7 +2,7 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TranslationCore", "TranslationCore\TranslationCore.csproj", "{7D097C18-5220-4056-961A-616C2E712B4D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TranslationTest", "TranslationTest\TranslationTest.csproj", "{9B47458D-1CC2-469F-B51A-B1DDA4873226}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TranslationApi", "TranslationApi\TranslationApi.csproj", "{A254BCD0-6214-425F-ABC3-781B2F7FD0E4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -14,9 +14,9 @@ Global
 		{7D097C18-5220-4056-961A-616C2E712B4D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7D097C18-5220-4056-961A-616C2E712B4D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7D097C18-5220-4056-961A-616C2E712B4D}.Release|Any CPU.Build.0 = Release|Any CPU
-		{9B47458D-1CC2-469F-B51A-B1DDA4873226}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{9B47458D-1CC2-469F-B51A-B1DDA4873226}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{9B47458D-1CC2-469F-B51A-B1DDA4873226}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{9B47458D-1CC2-469F-B51A-B1DDA4873226}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A254BCD0-6214-425F-ABC3-781B2F7FD0E4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A254BCD0-6214-425F-ABC3-781B2F7FD0E4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A254BCD0-6214-425F-ABC3-781B2F7FD0E4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A254BCD0-6214-425F-ABC3-781B2F7FD0E4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
