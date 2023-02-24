@@ -4,7 +4,7 @@ using TranslationCore;
 namespace TranslationApi.Controllers;
 
 [ApiController]
-[Route("[controller]")]
+[Route("api/common")]
 public class TranslationController : ControllerBase
 {
     private readonly ILogger<TranslationController> _logger;
@@ -23,7 +23,8 @@ public class TranslationController : ControllerBase
         _nlpTranslationService = nlpTranslationService;
     }
     
-    [HttpPost(Name = "PostTranslationController")]
+    [HttpPost]
+    [Route("translate")]
     public async Task<ActionResult> Post(
         string translateText, 
         string source,
@@ -35,6 +36,16 @@ public class TranslationController : ControllerBase
         var translatedText = await _nlpTranslationService
             .Translate(translateText, dSource, dTarget);
 
+        return Ok(translatedText);
+    }
+    
+    [HttpPost]
+    [Route("summarize")]
+    public async Task<ActionResult> Post(string text, string size = "small")
+    {
+        var translatedText = await _nlpTranslationService
+            .Summarize(text, size);
+    
         return Ok(translatedText);
     }
 }

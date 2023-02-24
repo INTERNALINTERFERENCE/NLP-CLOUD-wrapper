@@ -1,6 +1,6 @@
 ﻿using System.Text.Json.Serialization;
 
-namespace TranslationCore;
+namespace TranslationCore.Models;
 public class TranslationRes
 {
     [JsonPropertyName("translation_text")]
